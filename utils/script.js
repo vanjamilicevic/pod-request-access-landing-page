@@ -9,8 +9,8 @@ document.getElementById('request-access-button').onclick = function() {
 
     emailValue = document.getElementById("email-input").value
     if (!validateEmail(emailValue)) {
-        document.getElementById("hidden-text").style.display = "block";
+        document.getElementById("hidden-text").style.visibility = "visible";
     } else {
-        document.getElementById("hidden-text").style.display = "none";
+        document.getElementById("hidden-text").style.visibility = "hidden";
     }
 }
