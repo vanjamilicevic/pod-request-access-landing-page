@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Setting code schema, displaying content properly based on device size and linking styles -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="./CSS/globals.css">
+  <link rel="stylesheet" href="./CSS/styles.css">
+  
+  <title>Frontend Mentor | Pod request access landing page</title>
+</head>
+<body>
+  <!--Main container wraps the entire page content-->
+  <main>
+    <img class="pod-image" src="./assets/desktop/logo.svg" alt="Logo">
+    <img class="dots-image" src="./assets/desktop/bg-pattern-dots.svg" alt="Image of dots pattern.">
+
+    <!--Title of podcast-->
+    <section class="podcasts-content-container">
+      <h1 class="publish-podcasts">
+        PUBLISH YOUR PODCASTS <br>
+        <span class="everywere">
+          EVERYWHERE.
+        </span>
+      </h1>
+
+      <!--Text content of podcast-->
+      <p class="podcasts-description">
+        Upload your audio to Pod with a single click. We'll<br>
+        then distribute your podcast to Spotify. Apple<br>
+        Podcasts, Google Podcasts, Pocket Casts and more!
+      </p>
+
+      <section class="button-and-input">
+        <input type="text" class="email-input" id="email-input" placeholder="Email adress">
+        <button class="request-access-button" id="request-access-button" type="submit" onclick="toggleClass()">Request Access</button>
+        <p class="hidden-text" id="hidden-text">Oops! Please check your email!</p>
+      </section>
+
+      <!--Section of four logo images-->
+      <section class="logo-images">
+        <img class="images-logo-podcast" src="./assets/desktop/spotify.svg" alt="Image of spotify logo.">
+        <img class="images-logo-podcast" src="./assets/desktop/apple-podcast.svg" alt="Image of apple podcast.">
+        <img class="images-logo-podcast" src="./assets/desktop/google-podcasts.svg" alt="Image of google podcast.">
+        <img class="images-logo-podcast" src="./assets/desktop/pocket-casts.svg" alt="Image of pocket casts.">
+      </section>
+      
+    </section>
+
+  </main>
+
+  <script src="./utils/script.js"></script>
+</body>
+</html>
